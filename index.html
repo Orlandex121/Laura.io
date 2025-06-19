@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Especial para Laura</title>
+  <style>
+    body {
+      background-image: url('https://i.blogs.es/02fd8c/euclid-ero-messier78.8k8k.cutout1/1366_2000.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fefefe;
+      min-height: 100vh;
+      backdrop-filter: brightness(0.9);
+    }
+
+    .botones-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+      gap: 25px 30px;
+      margin-bottom: 30px;
+      justify-content: center;
+      width: 100%;
+      max-width: 1150px;
+    }
+
+    button {
+      background-color: rgba(68, 110, 99, 0.9);
+      border: none;
+      padding: 20px;
+      border-radius: 20px;
+      color: white;
+      font-size: 26px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 8px 12px rgba(68, 110, 99, 0.6);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button:hover {
+      background-color: #29463d;
+      transform: scale(1.05);
+    }
+
+    .seccion {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #446E63;
+      border-radius: 15px;
+      padding: 40px;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      margin-bottom: 40px;
+      color: #3d2c1c;
+      font-size: 20px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btnVolverSeccion {
+      background-color: #446E63;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(68, 110, 99, 0.5);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      user-select: none;
+      align-self: center;
+    }
+
+    .btnVolverSeccion:hover {
+      background-color: #29463d;
+      transform: scale(1.05);
+    }
+
+    .opcion {
+      background-color: #ede3d2;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      text-align: center;
+    }
+
+    .opcion:hover {
+      background-color: #d5c4a1;
+    }
+
+    #resultadoQuiz {
+      font-size: 22px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="botones-container" id="menu-principal">
+    <button id="btnLeer">Cómo nos conocimos</button>
+    <button id="nuestras-fotos-btn">Nuestras fotos</button>
+    <button id="btnRacha">Nuestra racha</button>
+    <button id="btnQuiz">¿Cuánto sabes de nosotros?</button>
+    <button id="btnCartas">Cartas lindas</button>
+    <button id="btnSpotify">Nuestra canción</button>
+  </div>
+
+  <div id="mensaje" class="seccion">
+    <h2>Cómo nos conocimos</h2>
+    <p>Te cuento cómo empezó todo con ella, porque en verdad fue bien curioso y hasta ahora me sigue pareciendo especial.
+
+Antes de conocerla en persona, ya había escuchado de ella. Un amigo mío hablaba mucho sobre ella, siempre la mencionaba, y yo escuchaba, pero la verdad... nunca me animé a escribirle o seguirla por redes. Como que me daba cosa, no sé, tal vez nervios. Así que pasó un tiempo sin que hubiera ningún contacto.
+
+Hasta que un día estaba con ese mismo amigo comiendo unas galletas, y me sobró una. Se me ocurrió decirle que se la diera a ella. No sé por qué lo hice, pero fue como un impulso. Y lo hizo. Esa galleta fue literalmente el primer gesto que nos conectó. Algo tan simple... pero para mí significa mucho, porque fue el primer paso sin que ella lo supiera.
+
+Después, un día nos invitaron a una pichanga a los dos. Ahí fue donde la vi por primera vez. No sé cómo explicarlo, pero hubo algo en ese momento que me marcó. Desde entonces, las cosas empezaron a fluir de a pocos.
+
+Al comienzo, hablarle era complicado para mí. Me ponía nervioso, sentía que no sabía qué decir, pero poco a poco fuimos agarrando confianza. Y fue muy bonito cómo, sin forzar nada, fuimos construyendo algo. Conversábamos, nos contábamos cosas, nos reíamos. Y así, casi sin darnos cuenta, comenzamos a compartir momentos únicos.
+
+Fuimos a conciertos —uno de Gonzalo Genek, por ejemplo— y fue uno de esos días que te quedan en la memoria para siempre. También salidas locas que parecían imposibles de organizar, pero al final siempre terminaban saliendo. Como si el universo dijera “ustedes vayan, yo me encargo del resto”. Y nos salía bien.
+
+Y si te hablo de cómo es ella… es una chica súper sencilla, pero esa sencillez es justo lo que la hace diferente. Tiene una ternura natural que no intenta demostrar nada, simplemente está ahí. Su voz es suave, y su forma de ver las cosas tiene algo especial. Siento que dentro de ella hay una niña que simplemente quiere ser auténtica, sin máscaras, sin filtros… y eso vale oro hoy en día.
+
+Así que sí… si tuviera que empezar todo otra vez, sin pensarlo ni un segundo, volvería a darle esa galleta.</p>
+    <button class="btnVolverSeccion">Volver</button>
+  </div>
+
+  <div id="quiz-container" class="seccion">
+    <h2>¿Cuánto sabes de nosotros?</h2>
+    <div id="preguntaQuiz"></div>
+    <div id="opcionesQuiz"></div>
+    <div id="resultadoQuiz"></div>
+    <button class="btnVolverSeccion">Volver</button>
+  </div>
+
+  <div id="racha" class="seccion">
+    <h2>🔥 <span id="contadorRacha">0</span> días de racha</h2>
+    <p>Cada día que pasa contigo cuenta. Esta racha es un símbolo de lo constante y bonito que es tenerte en mi vida.</p>
+    <button class="btnVolverSeccion">Volver</button>
+  </div>
+
+  <div id="cartas-container" class="seccion">
+    <div id="lista-cartas" style="width: 100%; max-height: 400px; overflow-y: auto;"></div>
+    <button class="btnVolverSeccion">Volver</button>
+  </div>
+
+  <div id="nuestra-cancion" class="seccion" style="text-align:center;">
+    <iframe 
+      src="https://open.spotify.com/embed/track/6mP16Mr2X3ZU2bNmWBUqzK?utm_source=generator" 
+      allowtransparency="true" 
+      allow="encrypted-media"
+      width="100%" height="380" frameborder="0"
+      style="border-radius:15px; margin-top:10px;">
+    </iframe>
+    <button class="btnVolverSeccion">Volver</button>
+  </div>
+    <div id="seccion-fotos" class="seccion" style="text-align:center;">
+  <!-- Fotos -->
+  <div id="fotos-container">
+    <img src="1.jpg" alt="Foto 1">
+    <img src="2.jpg" alt="Foto 2">
+    <img src="3.jpg" alt="Foto 3">
+    <img src="4.jpg" alt="Foto 4">
+    <img src="5.jpg" alt="Foto 5">
+    <img src="6.jpg" alt="Foto 6">
+    <img src="7.jpg" alt="Foto 7">
+    <img src="8.jpg" alt="Foto 8">
+    <img src="9.jpg" alt="Foto 9">
+    <img src="10.jpg" alt="Foto 10">
+    <img src="11.jpg" alt="Foto 11">
+    <img src="12.jpg" alt="Foto 12">
+    <img src="13.jpg" alt="Foto 13">
+    <img src="14.jpg" alt="Foto 14">
+    <img src="15.jpg" alt="Foto 15">
+    <img src="16.jpg" alt="Foto 16">
+    <img src="17.jpg" alt="Foto 17">
+    <img src="18.jpg" alt="Foto 18">
+    <img src="19.jpg" alt="Foto 19">
+    <img src="20.jpg" alt="Foto 20">
+    <img src="21.jpg" alt="Foto 21">
+    <img src="22.jpg" alt="Foto 22">
+    <img src="23.jpg" alt="Foto 23">
+    <img src="24.jpg" alt="Foto 24">
+    <img src="25.jpg" alt="Foto 25">
+    <img src="26.jpg" alt="Foto 26">
+    <img src="27.jpg" alt="Foto 27">
+    <img src="28.jpg" alt="Foto 28">
+    <img src="29.jpg" alt="Foto 29">
+  </div>
+
+  <!-- Videos -->
+  <div id="videos-container">
+    <video controls><source src="v1.mp4" type="video/mp4"></video>
+    <video controls><source src="v5.mp4" type="video/mp4"></video>
+    <video controls><source src="v6.mp4" type="video/mp4"></video>
+    <video controls><source src="v7.mp4" type="video/mp4"></video>
+    <video controls><source src="v8.mp4" type="video/mp4"></video>
+    <video controls><source src="v9.mp4" type="video/mp4"></video>
+    <video controls><source src="v10.mp4" type="video/mp4"></video>
+    <video controls><source src="v11.mp4" type="video/mp4"></video>
+    <video controls><source src="v12.mp4" type="video/mp4"></video>
+    <video controls><source src="v14.mp4" type="video/mp4"></video>
+    <video controls><source src="v15.mp4" type="video/mp4"></video>
+  </div>
+
+  <button class="btnVolverSeccion">Volver</button>
+</div>
+
+
+  <script>
+    const fechaInicioRacha = new Date('2025-06-04T00:00:00-00:00');
+    const fechaInicioCartas = new Date('2025-06-19T00:00:00-00:00');
+
+    function obtenerHoyPeru() {
+      const ahora = new Date();
+      const peruOffset = -5 * 60; // UTC-5
+      const localOffset = ahora.getTimezoneOffset();
+      const diferencia = (peruOffset - localOffset) * 60 * 1000;
+      return new Date(ahora.getTime() + diferencia);
+    }
+
+    function actualizarRachaYCartas() {
+      const hoy = obtenerHoyPeru();
+      hoy.setHours(0,0,0,0);
+
+      const diffDiasRacha = Math.floor((hoy - fechaInicioRacha) / (1000 * 60 * 60 * 24));
+      document.getElementById('contadorRacha').textContent = diffDiasRacha;
+
+      const cartas = [
+          "Carta 1: Yo sé lo fuerte que eres, incluso cuando tú lo dudas. Y no hay examen, mudanza o miedo que pueda más que todo lo que llevas dentro, aunque me digas que miento, por dentro sabes que no.",
+          "Carta 2: Tú puedes con ese examen y con lo que venga. Yo confío en ti más de lo que imaginas.",
+          "Carta 3: Eres magia, aunque a veces no lo veas.",
+        "Carta 4: Las cosas más lindas que me pasaron, empezaron contigo y una galleta.",
+          "Carta 5: A veces no entiendo cómo lo haces, pero siempre logras que mi día sea mejor con tan solo aparecer.",
+        "Carta 6: Aunque el mundo esté de cabeza, mientras tú estés bien, todo vale la pena.",
+        "Carta 7: Tu voz tiene ese algo que me calma, como si todo volviera a su lugar.",
+        "Carta 8: Lo que tú ves como pequeño, yo lo veo como parte de lo que te hace increíble.",
+        "Carta 9: Hemos vivido cosas que parecían locas, y al final terminamos diciendo: “valió la pena”.",
+        "Carta 10: No eres perfecta, y eso es lo que te hace tan real y tan valiosa.",
+          "Carta 11: Cada vez que te sientas insegura, piensa en todo lo que ya lograste. Vas mucho más lejos de lo que crees.",
+          "Carta 12: Eres esa parte del día que no quiero que se acabe nunca.",
+          "Carta 13: Cuando tú sonríes, todo lo demás deja de importar un ratito.",
+          "Carta 14: No me canso de agradecer que justo tú aparecieras en mi vida.",
+          "Carta 15: Cada vez que hablo contigo, algo en mí se acomoda.",
+        "Carta 16: En un mundo lleno de ruido, tú eres esa canción que siempre quiero volver a escuchar.",
+          "Carta 17: Tu forma de ser hace que todo se sienta más suave, más bonito, más tú.",
+        "Carta 18: Gracias por ser tú, sin filtros, sin máscaras, solo tú. Eso es lo que más admiro.",
+        "Carta 19: No tienes idea del efecto tan bonito que causas en los demás, solo por ser tú.",
+          "Carta 20: Y si volviera al primer día, sin pensarlo, te volvería a dar esa galleta."
+];
+
+       
+
+      const diffDiasCartas = Math.floor((hoy - fechaInicioCartas) / (1000 * 60 * 60 * 24));
+      const cartasParaMostrar = cartas.slice(0, diffDiasCartas + 1);
+      const listaCartas = document.getElementById('lista-cartas');
+      listaCartas.innerHTML = '';
+      cartasParaMostrar.forEach(texto => {
+        const div = document.createElement('div');
+        div.className = 'carta';
+        div.textContent = texto;
+        listaCartas.appendChild(div);
+      });
+    }
+
+    const preguntas = [
+      {
+        texto: "¿Que es lo que mas aura me ah dado?",
+        opciones: ["Caerme en bici", "Llorar por miedo", "Dormirme y no ir al examen"],
+        correcta: 0
+      },
+      {
+        texto: "¿Qué concierto fuimos juntos?",
+        opciones: ["Bad Bunny", "Gonzalo Genek", "Duki"],
+        correcta: 1
+      },
+      {
+        texto: "¿Qué es lo que más me gusta de ti?",
+        opciones: ["Tu sonrisa", "Tu forma de ser", "Tus ojos"],
+        correcta: 2
+      },
+      {
+        texto: "¿Cuantas veces perdiste la racha?",
+        opciones: ["3", "2", "4"],
+        correcta: 2
+      },
+      {
+        texto: "¿Quien es mi cantante favorito actualmente?",
+        opciones: ["Quevedo", "Duki", "Bruno Mars"],
+        correcta: 0
+      },
+      {
+        texto: "¿Cual es tu olor favorito?",
+        opciones: ["Vainilla", "Canela", "Lavanda"],
+        correcta: 0
+      },
+      {
+        texto: "¿A que me haces recordar?",
+        opciones: ["kbra", "La noche", "Un atardecer"],
+        correcta: 2
+      },
+      {
+        texto: "¿De que equipo somos?",
+        opciones: ["Universitario", "Aggglianza", "Ayacucho"],
+        correcta: 0
+      }, 
+      {
+        texto: "¿Cuanto mides?",
+        opciones: ["174 cm", "172 cm", "170 cm"],
+        correcta: 2
+      },
+      {
+        texto: "¿Que comi para impresionarte?",
+        opciones: ["Una ganpi de chocolate", "Una hamburguesa", "Una ensalada"],
+        correcta: 0
+      },
+    ];
+
+    let indicePregunta = 0;
+    let puntaje = 0;
+
+    function mostrarPregunta() {
+      const p = preguntas[indicePregunta];
+      document.getElementById("preguntaQuiz").textContent = p.texto;
+      const contenedor = document.getElementById("opcionesQuiz");
+      contenedor.innerHTML = '';
+      p.opciones.forEach((op, i) => {
+        const div = document.createElement("div");
+        div.className = "opcion";
+        div.textContent = op;
+        div.onclick = () => {
+          if (i === p.correcta) puntaje++;
+          indicePregunta++;
+          if (indicePregunta < preguntas.length) {
+            mostrarPregunta();
+          } else {
+            mostrarResultado();
+          }
+        };
+        contenedor.appendChild(div);
+      });
+    }
+
+    function mostrarResultado() {
+      const contenedor = document.getElementById("opcionesQuiz");
+      contenedor.innerHTML = '';
+      document.getElementById("preguntaQuiz").textContent = "¡Terminaste el quiz!";
+      document.getElementById("resultadoQuiz").textContent = `Tu puntaje fue ${puntaje} de ${preguntas.length}`;
+    }
+
+    const btnLeer = document.getElementById('btnLeer');
+    const btnFotos = document.getElementById('nuestras-fotos-btn');
+    const btnRacha = document.getElementById('btnRacha');
+    const btnQuiz = document.getElementById('btnQuiz');
+    const btnCartas = document.getElementById('btnCartas');
+    const btnSpotify = document.getElementById('btnSpotify');
+
+    const menuPrincipal = document.getElementById('menu-principal');
+    const mensaje = document.getElementById('mensaje');
+    const seccionFotos = document.getElementById('seccion-fotos');
+    const cancion = document.getElementById('nuestra-cancion');
+    const racha = document.getElementById('racha');
+    const quizContainer = document.getElementById('quiz-container');
+    const cartasContainer = document.getElementById('cartas-container');
+    const secciones = [mensaje, seccionFotos, cancion, racha, quizContainer, cartasContainer];
+
+    function hideAllSections() {
+      secciones.forEach(s => s.style.display = 'none');
+      menuPrincipal.style.display = 'none';
+    }
+
+    function showMenu() {
+      secciones.forEach(s => s.style.display = 'none');
+      menuPrincipal.style.display = 'grid';
+    }
+
+    btnLeer.onclick = () => { hideAllSections(); mensaje.style.display = 'flex'; };
+    btnFotos.onclick = () => { hideAllSections(); seccionFotos.style.display = 'flex'; };
+    btnRacha.onclick = () => { hideAllSections(); racha.style.display = 'flex'; };
+    btnQuiz.onclick = () => { hideAllSections(); quizContainer.style.display = 'flex'; indicePregunta = 0; puntaje = 0; mostrarPregunta(); };
+    btnCartas.onclick = () => { hideAllSections(); cartasContainer.style.display = 'flex'; actualizarRachaYCartas(); };
+    btnSpotify.onclick = () => { hideAllSections(); cancion.style.display = 'flex'; };
+
+    document.querySelectorAll('.btnVolverSeccion').forEach(btn => {
+      btn.onclick = showMenu;
+    });
+
+    actualizarRachaYCartas();
+    setInterval(actualizarRachaYCartas, 60 * 60 * 1000);
+  </script>
+</body>
+</html>
